@@ -1,14 +1,14 @@
 #!groovy
 pipeline {
     environment {
-        registry = "viodachar/devops"
+        registry = "vinodachar985/sneha985"
         registryCredentials = 'docker-cred'
     }
     agent any
     stages {
         stage('Clone the Git Repository') {
             steps {
-                git credentialsId: 'git-cred', url: 'https://github.com/9538541430/rps-ant.git'
+                git credentialsId: 'git-cred', url: 'https://github.com/vinodachar/devops.git'
             }
         }
         stage('Building docker image') {
