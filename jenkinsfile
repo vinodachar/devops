@@ -4,7 +4,7 @@ pipeline {
         registry = "vinodachar985/sneha985"
         registryCredentials = 'docker-cred'
     }
-    agent {label 'Built-In Node'}
+    agent any
     stages {
         stage('Clone the Git Repository') {
             steps {
