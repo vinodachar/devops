@@ -5,7 +5,6 @@ pipeline {
         registryCredentials = 'docker-cred'
     }
     agent any
-    tools { git 'Git' }
     stages {
         stage('Clone the Git Repository') {
             steps {
